@@ -1,0 +1,7 @@
+select e.employeenumber,e.lastname,e.firstname,e.extension,e.email,e.jobtitle,
+c.customernumber,c.customername,c.contactlastname,c.contactfirstname,c.phone,c.addressline1,
+c.addressline2,c.city,c.state,c.postalcode,c.country,c.salesrepemployeenumber,c.creditlimit
+from employees e, customers c where 
+e.employeeNumber = c.salesrepemployeenumber
+
+
