@@ -1,5 +1,5 @@
 CANADIAN E_COMMERCE DATABASE
-Canadaian E_commerce database is a high_level tool designed to to facilitate the employees data for better analysis.It provides a simplified and comprehensive set of tables,views and queries focussing on common employees and customer data
+Canadian E_commerce database is a high_level tool designed to to facilitate the employees data for better analysis.It provides a simplified and comprehensive set of tables,views and queries focussing on common employees and customer data
 Features
 * Tables:Includes tables for offices,employees and customers
 * views: Predefined views for customers ,employees and offices insights
