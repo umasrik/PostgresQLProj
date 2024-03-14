@@ -1,0 +1,41 @@
+Left Join
+============
+
+select e.employeenumber,e.lastname,e.firstname,e.extension,e.email,e.jobtitle,o.city,o.phone,o.postalcode FROM employees e
+LEFT JOIN offices o on  e.officecode = o.officecode;
+
+
+Right Join
+============
+
+select e.employeenumber,e.lastname,e.firstname,e.extension,e.email,e.jobtitle,o.city,o.phone,o.postalcode FROM employees e
+RIGHT JOIN offices o on  e.officecode = o.officecode;
+
+
+Full/Full outer Join
+====================
+
+
+select e.employeenumber,e.lastname,e.firstname,e.extension,e.email,e.jobtitle,o.city,o.phone,o.postalcode FROM employees e
+FULL OUTER JOIN offices o on  e.officecode = o.officecode;
+
+
+select e.employeenumber,e.lastname,e.firstname,e.extension,e.email,e.jobtitle,o.city,o.phone,o.postalcode FROM employees e
+FULL JOIN offices o on  e.officecode = o.officecode;
+
+
+
+Three Tables with Joins
+=======================
+
+select e.employeenumber,e.lastname,e.firstname,e.extension,e.email,e.jobtitle,o.city,o.phone,o.postalcode,
+c.customernumber,c.customername,c.contactlastname,c.contactfirstname,c.phone,c.addressline1,
+c.addressline2,c.city,c.state,c.postalcode,c.country,c.salesrepemployeenumber,c.creditlimit
+from employees e
+inner join customers c on e.employeeNumber = c.salesrepemployeenumber
+inner join offices o on o.officecode=e.officecode;
+
+
+
+
+
