@@ -1,0 +1,21 @@
+create or replace view vw_ecommerce  as
+select
+e.employeenumber,
+e.lastname,
+e.firstname,
+e.extension,
+e.email,
+e.jobtitle,
+o.city,o.phone,
+o.postalcode,
+c.salesrepemployeenumber
+from
+employees e
+join
+customers c on e.employeenumber = c.salesrepemployeenumber
+join
+offices o on o.officecode = e.officecode;
+
+
+select * from vw_ecommerce
+
